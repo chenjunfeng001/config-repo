@@ -19,3 +19,13 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 server:
   port: 8083
+# 配置自定义路由
+zuul:
+  # 全部敏感头都可以传递token
+  sensitive-headers:
+  routes:
+#    myProduct:
+#      path: /myProduct/**
+#      serviceId: product
+    product: /myProduct/**
+  ignored-patterns:
