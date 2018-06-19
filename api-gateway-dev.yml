@@ -29,4 +29,6 @@ zuul:
 #      serviceId: product
     product: /myProduct/**
     user: /myUser/**
+  servlet-path: /
   ignored-patterns:
+
