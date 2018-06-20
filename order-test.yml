@@ -23,3 +23,17 @@ eureka:
 server:
   port: 8081
 env: test
+logging:
+  level: debug
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2000
+    getProductInfoList:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
